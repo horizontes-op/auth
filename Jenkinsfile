@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Jenkins Auth') {
+        stage('auth interface') {
             steps {
-                echo 'Jenkins Auth'
+                echo 'auth interface'
             }
         }
-        stage('Build') { 
+        stage('build auth interface') { 
             steps {
                 sh 'mvn clean install'
             }
